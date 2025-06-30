@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form HTML</title>
+    </head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    <body>
+        <form class="container">
+
+        <div class="header">
+            <h2>Payment form example</h2>
+        </div>
+
+        <div class="error">Some fields are missing</div>
+
+        
+            <fieldset class="form-group-1">
+                <label for="card">Card#:</label>
+                <input type="text" id="card" placeholder="XXXXXXXXXXXX"><br><br>
+                <label for="cvc">CVC#:</label>
+                <input type="text" id="cvc" placeholder="0000"><br><br>
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="Amount"><br><br>
+            </fieldset>
+            <fieldset class="form-group-2">
+                <fieldset class="sub-form-21">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name"><br><br>
+                    <label for="city">City</label>
+                    <input type="text" id="city"><br><br>
+                    <label for="card-type">We accept</label>
+                    <div class="cards">
+                        <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" alt="Mastercard"/>
+                        <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa"/>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/discover.png" alt="Discover"/>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/amex.png" alt="Amex"/>
+                    </div>
+                </fieldset>
+                <fieldset class="sub-form-22">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name"><br><br>
+
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="State1">State1</option>
+                            <option value="State2">State2</option>
+                            <option value="State3">State3</option>
+                            <option value="State4">State4</option>
+                        </select>  
+                        <label for="postal-code">Postal code</label>
+                        <input type="text" id="postal-code"><br><br>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Add any notes here."></textarea>
+                </fieldset>
+            </fieldset>
+
+
+        <div class="buttons">
+            <button type="button" class="cancel">Cancel</button>
+            <button type="submit" class="send">Send</button>
+
+        </div>
+
+    </form>
+    </body>
+</html>
